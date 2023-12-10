@@ -1,0 +1,64 @@
+body {
+  background-color: black;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/106/641/original/worldmapcolor.jpeg?1702193054);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  margin: 70px;
+}
+h1 {
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  font-size: 88px;
+}
+h2 {
+  font-family: "Nova Square", sans-serif;
+  font-size: 33px;
+  margin: 0 0 5px;
+}
+select {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  background-color: #5f257f;
+  color: #dfcff6;
+  display: block;
+  width: 100%;
+}
+footer {
+  text-align: center;
+  padding: 70px 0 0 0;
+  font-size: 12px;
+}
+a {
+  color: #5f257f;
+}
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #dfcff6;
+  opacity: 0.85;
+  border-radius: 10px;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-bottom: 1px dashed #bea4e9;
+  padding: 20px 0;
+}
+.city:last-child {
+  border: none;
+}
+.date {
+  opacity: 0.7;
+}
+.time {
+  font-size: 33px;
+}
+.time small {
+  font-size: 18px;
+  vertical-align: middle;
+}

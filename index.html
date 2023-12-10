@@ -3,6 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
+
     <title>🌏 World Clock</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
@@ -10,7 +26,7 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select name="" id="">
+      <select name="" id="" class="dropdown">
         <option value="">Choose a city...</option>
         <option value="">Alberobello</option>
         <option value="">Barcelona</option>
@@ -18,30 +34,35 @@
       </select>
 
       <div class="city">
-        <h2>Madrid</h2>
-        <div class="date">Sunday December 10th 2023</div>
-        <div class="time">5:08pm</div>
+        <div>
+          <h2>Madrid</h2>
+          <div class="date">Sunday December 10th 2023</div>
+        </div>
+        <div class="time">5:08<small>pm</small></div>
       </div>
       <div class="city">
-        <h2>Montego Bay</h2>
-        <div class="date">Sunday December 10th 2023</div>
-        <div class="time">5:08pm</div>
+        <div>
+          <h2>Montego Bay</h2>
+          <div class="date">Sunday December 10th 2023</div>
+        </div>
+        <div class="time">5:08<small>pm</small></div>
       </div>
+
+      <footer>
+        Coded by
+        <a href="https://github.com/taegen-seto" target="_blank">Taegen Seto</a>
+        🖤
+        <a
+          href="https://github.com/taegen-seto/project-world-clock"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        🐈‍⬛
+        <a href="https://extraordinary-kelpie.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
     </div>
-    <footer>
-      Coded by
-      <a href="https://github.com/taegen-seto" target="_blank">Taegen Seto</a>
-      🖤
-      <a
-        href="https://github.com/taegen-seto/project-world-clock"
-        target="_blank"
-        >open-sourced on GitHub</a
-      >
-      🐈‍⬛
-      <a href="https://extraordinary-kelpie.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
