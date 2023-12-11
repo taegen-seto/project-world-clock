@@ -4,7 +4,7 @@ function updateTime() {
     let cityOneDateElement = cityOneElement.querySelector(".date");
     let cityOneTimeElement = cityOneElement.querySelector(".time");
 
-    let cityOneTime = moment().tz("Europe/Madrid");
+    let cityOneTime = moment().tz("America/Chicago");
 
     cityOneDateElement.innerHTML = cityOneTime.format("dddd, MMMM Do YYYY");
     cityOneTimeElement.innerHTML = cityOneTime.format(
@@ -17,7 +17,7 @@ function updateTime() {
     let cityTwoDateElement = cityTwoElement.querySelector(".date");
     let cityTwoTimeElement = cityTwoElement.querySelector(".time");
 
-    let cityTwoTime = moment().tz("America/Jamaica");
+    let cityTwoTime = moment().tz("Indian/Maldives");
 
     cityTwoDateElement.innerHTML = cityTwoTime.format("dddd, MMMM Do YYYY");
     cityTwoTimeElement.innerHTML = cityTwoTime.format(
@@ -28,6 +28,9 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
