@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
 
     <title>🌏 World Clock</title>
     <link rel="stylesheet" href="src/style.css" />
@@ -33,14 +35,15 @@
         <option value="">Kyoto</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="city-one">
         <div>
           <h2>Madrid</h2>
           <div class="date">Sunday December 10th 2023</div>
         </div>
         <div class="time">5:08<small>pm</small></div>
       </div>
-      <div class="city">
+
+      <div class="city" id="city-two">
         <div>
           <h2>Montego Bay</h2>
           <div class="date">Sunday December 10th 2023</div>
